@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+article {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+article:hover {
+    transform: translateY(-5px);
+}
+.post-title {
+    color: #343a40;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    header {
+        padding: 10px 0;
+    }
+}
+.person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.person img {
+    width: 150px; /* Ajustez selon la taille souhaitée */
+    border-radius: 50%; /* Donne un aspect arrondi à l'image */
+    margin: 0 20px;
+}
+
+/* Pour inverser l'ordre des éléments dans la deuxième section */
+.person:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.person div {
+    flex: 1;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Change la couleur du texte au survol */
+    background-color: #ffffff; /* Ajoute un fond blanc pour un effet d'éclaircissement */
+    padding: 5px 10px; /* Optionnel: ajoute un peu de padding pour un effet de bouton */
+    border-radius: 5px; /* Optionnel: arrondit les coins */
+}
+.post-title {
+    cursor: pointer;
+}
+
+.post-details {
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+    max-height: 0;
+}
+article img {
+    width: 100%; /* Cela rendra l'image responsive, s'adaptant à la largeur de l'article */
+    height: auto; /* Cela préservera le ratio d'aspect de l'image */
+    max-width: 400px; /* Définissez la largeur maximale de l'image */
+    max-height: 300px; /* Définissez la hauteur maximale de l'image */
+}
+.article-block {
+    cursor: pointer;
+    margin-bottom: 20px; /* Espacement entre les articles */
+}
+
+.article-background {
+    background-size: cover; /* Assure que l'image de fond couvre tout l'espace */
+    background-position: center; /* Centre l'image de fond */
+    position: relative; /* Position relative pour positionner le titre */
+    height: 200px; /* Hauteur du bloc */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centre le titre verticalement et horizontalement */
+}
+
+.article-title {
+    color: white; /* Couleur du titre */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le titre */
+    padding: 10px; /* Espacement autour du titre */
+    border-radius: 5px; /* Bords arrondis pour le fond du titre */
+}
+
+.article-details {
+    display: none; /* Cache les détails initialement */
+}

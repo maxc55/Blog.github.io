@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Titre de votre Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<body>
+    <header>
+        <h1>Chloé et Anthony</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">Qui sommes-nous ?</a></li>
+                <li><a href="test.html">Page Test</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="article-block" onclick="toggleDetails(this)">
+        <div class="article-background" style="background-image: url('rome.jpg');">
+            <h2 class="article-title">Rome</h2>
+        </div>
+        <div class="article-details" style="display:none;">
+            <p class="post-date">Publié le 23 avril</p>
+            <div class="post-content">
+                <p>Description du voyage à Rome...</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="article-block" onclick="toggleDetails(this)">
+        <div class="article-background" style="background-image: url('medellin.jpg');">
+            <h2 class="article-title">Medellin</h2>
+        </div>
+        <div class="article-details" style="display:none;">
+            <p class="post-date">Publié le 23 avril</p>
+            <div class="post-content">
+                <p>Description du voyage à Medellin...</p>
+            </div>
+        </div>
+    </div>
+    
+    
+<script src="script.js"></script>
+
+</body>
+</html>
